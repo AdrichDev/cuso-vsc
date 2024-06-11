@@ -1,21 +1,189 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>PAGINA PRUEBA ADRI</title>
-    <meta name= 'viewport' content='width=device-width, initial-scale=1'>
-       
-</head>
-<body
->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PRUEBA WEB ADRIAN</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <!--Para hacer tablas utilizaremos la etiqueta table y dentro (tr) table row-->
+    <table style="width: 500px">
+      <!-- Con este código configuramos el borde de una tabla-->
+      <thead>
+        <!-- Con (thead)conseguimos agrupar de una manera lógica los elementos que se encuentran en la cabecera de una tabla-->
+        <tr>
+          <!--Utilizamos la etiqueta (th) para indicar los elementos que van en la cabecera de la tabla-->
+          <th>Precio</th>
+          <th>Producto</th>
+        </tr>
+      </thead>
+      <tr>
+        <!--Utilizaremos la etiqueta de (td) para poder definir elementos estandares dentro de una tabla -->
+        <td>Mesa</td>
+        <td>50€</td>
+      </tr>
+      <tbody>
+        <!--Utilizamos Tbody para agrupar de forma lógica los elementos de una tabla y que están fuera de la cabecera y en algunos exploradores podremos hacer scroll entre los diferentes elementos-->
+        <tr>
+          <td>Ordenador sobremesa</td>
+          <td>1300€</td>
+        </tr>
+        <tr>
+          <td>TV Full HD</td>
+          <td>700€</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td>Total: 2500€</td>
+      </tfoot>
+    </table>
+    <br />
+    <!--ul significa lista no ordenada, cada vez que nosotros agreguemos elementos a esta lista aparecen con un punto negro (meteremos un li) que quiere decir list item-->
+
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+    </ul>
+    <!--utilizamos ol (order list) para crear una lista ordenada o enumerada-->
+    <ol>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <!--Para hacer sublistas creamos un elemento (li)y dentro de el un (ol) seguidamente ponemos mas (li) como si fueran sublistas-->
+      <li>
+        <ol>
+          <li style="list-style-type: upper-roman">Sub elemento 1</li>
+          <li style="list-style-type: upper-roman">Sub elemento 2</li>
+          <li style="list-style-type: upper-roman">Sub elemento 3</li>
+          <li style="list-style-type: upper-roman">Sub elemento 4</li>
+        </ol>
+      </li>
+    </ol>
+
+    <form action="/formulario" method="post">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre" />
+      <label for="apellido">Apellido</label>
+      <input type="text" id="apellido" name="apellido" placeholder="Apellido" />
+      <label for="Email">Email</label>
+      <input type="email" id="Email" name="email" placeholder="Email" />
+      <label for="contraseña">Contraseña</label>
+      <input
+        type="password"
+        id="contraseña"
+        name="contraseña"
+        placeholder="Contraseña"
+      />
+
+      <button style="background-color: goldenrod">Login</button>
+      <button style="background-color: goldenrod" ;>
+        <a href="https:/www.google.com" target="_blank" style="color: black"
+          >Reset Password</a
+        >
+      </button>
+      <br />
+      <br />
+      <label for="comentario">Escribe un comentario</label><br />
+      <textarea
+        rows="10"
+        cols="50"
+        id="comentario"
+        placeholder="Ingrese comentario"
+        name="comentario"
+      ></textarea>
+      <br />
+      <br />
+
+      <!--La ventaja de las etiquetas de tipo button con las de tipo submit esque podemos incluir más etiquetas de hmtl dentro de ellos (como por ejemplo imágenes)-->
+      <button type="button">Enviar</button>
+      <button type="reset">Limpiar valores "reset"</button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <br />
+    <br />
+    <br />
+    <button style="background-color: goldenrod">
+      <a target="_blank" href="https:/www.instagram.com/adrichdj">Instagram</a>
+    </button>
     <!-- Esto el navegador no lo lee-->
-     <button> Login</button> <button>Reset Password</button> 
-    <h1>Hola me llamo Adrián y estoy empezando a programar en verano.</h1>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <h1>
+      <span style="color: blue"
+        >Me llamo Adrián y estoy empezando a programar en verano.</span
+      >
+    </h1>
     <h2>En septiembre empezaré el GS de DAM.</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum explicabo eligendi praesentium velit, ipsum nihil exercitationem assumenda rem dolor, aspernatur ad, debitis voluptas. Minima eligendi deleniti veritatis vero! Facilis, delectus.</p>
-    <a href="https:/instagram/adrichdj"></a>
-    <script src='js/main.js'></script>
-    
-</body>
+    <hr />
+    <hr />
+    <hr />
+    <h1 style="font-size: xx-large">
+      Los virus gigantes de Groenlandia podrían ser nuestros aliados contra el
+      deshielo
+    </h1>
+    <p>
+      Virus gigantes hallados en la capa de hielo de Groenlandia podrían ayudar
+      a reducir el derretimiento del hielo y a moderar su impacto ambiental. El
+      reciente hallazgo de virus gigantes en la capa de hielo de Groenlandia ha
+      abierto una ventana de esperanza en la batalla contra el cambio
+      climático.<br /><span style="color: blue"
+        >Investigadores del Departamento de Ciencias Ambientales de la
+        Universidad de Aarhus</span
+      >, en Dinamarca, han descubierto que estos virus tienen la capacidad de
+      regular el crecimiento de las algas de la nieve infectándolas, lo que
+      podría contribuir a mitigar el deshielo acelerado de esta región
+      ártica.Las algas de la nieve son un factor determinante en la crisis
+      climática, ya que permanecen latentes durante los meses de otoño e
+      invierno, floreciendo en primavera y ennegreciendo vastas áreas del
+      hielo.<br />
+      <b
+        >Esta coloración oscura reduce la capacidad del hielo para reflejar la
+        luz solar, acelerando su derretimiento y contribuyendo al calentamiento
+        global. Los virus gigantes, al infectar estas algas, podrían regular su
+        proliferación y, por ende, ayudar a mantener la integridad del hielo.
+        Los virus gigantes de Groenlandia podrían ser nuestros aliados contra el
+        deshielo.</b
+      >
+      Lo paradójico de este hallazgo es que, aunque los virus son generalmente
+      mucho más pequeños que las bacterias, con dimensiones entre 20 y 200
+      nanómetros.<br /><b
+        >Los virus gigantes pueden alcanzar hasta 2,5 micrómetros</b
+      >, superando así en tamaño a muchas bacterias.<br />Lo paradójico de este
+      hallazgo es que, aunque
+      <b>los virus son generalmente mucho más pequeños que las bacterias</b>,
+      con dimensiones entre 20 y 200 nanómetros,
+      <span
+        ><a
+          style="color: orange"
+          target="_blank"
+          href="https://www.nationalgeographic.com.es/medio-ambiente/virus-gigantes-groenlandia-podrian-ser-nuestros-aliados-contra-deshielo_22487"
+          >superando así en tamaño a muchas bacterias</a
+        ></span
+      ><!--Utilizamos el (span) para seleccionar una parte concreta de un texto y el (a) para crear un hipervínculo y generar estilos
+      a podemos generar estilos con (style), hacer que el hipervínculo se abra en otra ventana (tarjet _blank) y elegir la web a la que
+      se dirigirá con href-->
+      Además, su genoma es significativamente más complejo, con alrededor de
+      2.500.000 letras, en comparación con los bacteriófagos que tienen entre
+      100.000 y 200.000 letras en su genoma.
+    </p>
+    <img src="/Images/groenlandia-deshielo.png" height="1080" width="1920" />
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
