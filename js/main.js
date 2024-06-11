@@ -6,9 +6,9 @@ return a + b;
 }
 
 // Prueba de la función sumar
-function testSumar() {
+function testSumar() { 
 let num1 = 5;
- let num2 = 2;
+let num2 = 2;
 
 
 // Llamada a la función y almacenamiento del resultado
@@ -20,4 +20,3 @@ console.log("El resultado de sumar " + num1 + " y " + num2 + " es: " + resultado
 }
 
 testSumar();
-
